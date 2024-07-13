@@ -1,6 +1,8 @@
 const {test, expect} = require('@playwright/test');
 
 test('Validate Youtube title', async({page}) => {
+
+    
     await page.goto('https://www.youtube.com/')
 
     await page.getByPlaceholder('Search').click();
